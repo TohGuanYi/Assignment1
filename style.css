@@ -1,0 +1,82 @@
+*, body{font-family: 'Dongle', sans-serif;}
+*, h1{color: black;}
+*, footer{align-self: center;}
+*, div{font-size: 20px;}
+
+.p {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-around;
+    border-style: solid;
+    width: 300px;
+    left: 600px;
+    position: relative;
+}
+ul{list-style: none;}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color:chocolate;
+}
+
+.flex-container > li {
+    background-color:aliceblue;
+    margin: 10px;
+    padding: 30px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 20px;
+    justify-content: space-between;
+    color:midnightblue;
+    border-style: outset;
+}
+
+.logo1 {
+    width: 300px;
+    top: -1300px;
+    left: 550px;
+    position: absolute;
+}
+
+.logo2 {
+    width: 300px;
+    top: -1550px;
+    left: -250px;
+    position: absolute;
+}
+
+.card1 {
+	width: 500px;
+	text-align: center;
+	margin: 80px auto 0;
+	padding: 2em;
+    border-radius: 5px;
+    position: relative;
+}
+.card2 {
+	width: 500px;
+	text-align: center;
+	margin: 80px auto 0;
+	padding: 2em;
+    border-radius: 5px;
+    position: relative;
+}
+.formcenter {
+    display: flex;  
+    flex-flow: column;
+    justify-content: space-around;
+    background-color:burlywood;
+	padding: 1.5em;
+    width: 300px;
+    left: 575px;
+    border-radius: 5px;
+    border-style: outset;
+    position: relative;
+}
+.center {
+    display: flex;  
+    flex-flow: wrap;
+    justify-content: center;
+}
