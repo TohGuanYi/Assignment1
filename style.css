@@ -4,13 +4,14 @@
 *, div{font-size: 20px;}
 
 .p {
+    background-color: lightpink;
     font-size: 35px;
     display: flex;
-    justify-content: space-around;
-    border-style: solid;
-    width: 300px;
-    left: 600px;
-    position: relative;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-style: outset;
+    max-width: 45%;
+    margin: auto;
 }
 ul{list-style: none;}
 
@@ -32,41 +33,10 @@ ul{list-style: none;}
     color:midnightblue;
     border-style: outset;
 }
-
-.logo1 {
-    width: 300px;
-    top: -1300px;
-    left: 550px;
-    position: absolute;
-}
-
-.logo2 {
-    width: 300px;
-    top: -1550px;
-    left: -250px;
-    position: absolute;
-}
-
-.card1 {
-	width: 500px;
-	text-align: center;
-	margin: 80px auto 0;
-	padding: 2em;
-    border-radius: 5px;
-    position: relative;
-}
-.card2 {
-	width: 500px;
-	text-align: center;
-	margin: 80px auto 0;
-	padding: 2em;
-    border-radius: 5px;
-    position: relative;
-}
 .formcenter {
     display: flex;  
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: center;
     background-color:burlywood;
 	padding: 1.5em;
     width: 300px;
@@ -79,4 +49,37 @@ ul{list-style: none;}
     display: flex;  
     flex-flow: wrap;
     justify-content: center;
+}
+
+@media (max-width: 480px){
+    .flex-item {
+        flex: 45%;
+        flex-grow: 0;
+        margin: 80px auto 0;
+    }
+    .p {
+        background-color: lightpink;
+        font-size: 25px;
+        display: flex;
+        border-style: outset;
+        max-width: 55%;
+        margin: auto;
+    }
+    .formcenter {
+        display: flex;  
+        flex-flow: column;
+        justify-content: center;
+        background-color:burlywood;
+        padding: 1.5em;
+        border-radius: 5px;
+        border-style: outset;
+        position: relative;
+        left:-15px;
+    }
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        color:chocolate;
+    }
 }
